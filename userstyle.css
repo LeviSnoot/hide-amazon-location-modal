@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name           Remove Amazon doxxing modal
+@namespace      https://github.com/LeviSnoot/hide-amazon-location-modal
+@version        1.0.0
+@description    Makes Amazon a bit more screenshare friendly
+@author         LeviSnoot
+==/UserStyle== */
+@-moz-document domain("amazon.se"),
+domain("amazon.com"),
+domain("amazon.co.uk"),
+domain("amazon.de"),
+domain("amazon.ca"),
+domain("amazon.co.jp"),
+domain("amazon.com.au"),
+domain("amazon.com.mx"),
+domain("amazon.es"),
+domain("amazon.eu"),
+domain("amazon.fr"),
+domain("amazon.in"),
+domain("amazon.it"),
+domain("amazon.nl") {
+    #nav-global-location-data-modal-action {
+        display: none !important;
+    }
+}
