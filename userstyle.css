@@ -1,25 +1,43 @@
 /* ==UserStyle==
 @name           Remove Amazon doxxing modal
+@version        1.1.0
 @namespace      https://github.com/LeviSnoot/hide-amazon-location-modal
-@version        1.0.0
 @description    Makes Amazon a bit more screenshare friendly
 @author         LeviSnoot
+@homepageURL    https://github.com/LeviSnoot/hide-amazon-location-modal
+@supportURL     https://github.com/LeviSnoot/hide-amazon-location-modal/issues
+@updateURL      https://cdn.jsdelivr.net/gh/LeviSnoot/hide-amazon-location-modal@latest/userstyle.css
+@license        MIT
 ==/UserStyle== */
-@-moz-document domain("amazon.se"),
-domain("amazon.com"),
-domain("amazon.co.uk"),
-domain("amazon.de"),
-domain("amazon.ca"),
-domain("amazon.co.jp"),
-domain("amazon.com.au"),
-domain("amazon.com.mx"),
-domain("amazon.es"),
-domain("amazon.eu"),
-domain("amazon.fr"),
-domain("amazon.in"),
-domain("amazon.it"),
-domain("amazon.nl") {
-    #nav-global-location-data-modal-action {
-        display: none !important;
-    }
+@-moz-document
+  /* Amazon store domains */
+  /* Source: https://www.amazon.com/gp/navigation-country/select-country */
+  domain("amazon.com"), /* United States */
+  domain("amazon.com.au"), /* Australia */
+  domain("amazon.com.be"), /* Belgium */
+  domain("amazon.com.br"), /* Brazil */
+  domain("amazon.ca"), /* Canada */
+  domain("amazon.cn"), /* China */
+  domain("amazon.eg"), /* Egypt */
+  domain("amazon.fr"), /* France */
+  domain("amazon.de"), /* Germany */
+  domain("amazon.in"), /* India */
+  domain("amazon.ie"), /* Ireland */
+  domain("amazon.it"), /* Italy */
+  domain("amazon.co.jp"), /* Japan */
+  domain("amazon.com.mx"), /* Mexico */
+  domain("amazon.nl"), /* Netherlands */
+  domain("amazon.pl"), /* Poland */
+  domain("amazon.sa"), /* Saudi Arabia */
+  domain("amazon.sg"), /* Singapore */
+  domain("amazon.co.za"), /* South Africa */
+  domain("amazon.es"), /* Spain */
+  domain("amazon.se"), /* Sweden */
+  domain("amazon.com.tr"), /* Turkey */
+  domain("amazon.ae"), /* United Arab Emirates */
+  domain("amazon.co.uk") /* United Kingdom */
+{
+  #nav-global-location-data-modal-action {
+    display: none !important;
+  }
 }
